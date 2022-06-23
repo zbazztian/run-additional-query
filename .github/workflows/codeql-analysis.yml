@@ -37,7 +37,7 @@ jobs:
           zbazztian/poc-queries/javascript-security-experimental.qls@main,
           zbazztian/poc-queries/python-security-experimental.qls@main
 
-    - if: matrix.language == "java"
+    - if: matrix.language == 'java'
       run: |
        javac Test.java
 
