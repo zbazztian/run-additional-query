@@ -36,6 +36,7 @@ jobs:
           zbazztian/poc-queries/javascript-security-recommendation.qls@main,
           zbazztian/poc-queries/javascript-security-experimental.qls@main
 
+
     - run: |
        javac Test.java
 
