@@ -30,8 +30,8 @@ jobs:
       uses: github/codeql-action/init@v2
       with:
         languages: ${{ matrix.language }}
-        queries: security-extended,\
-                 zbazztian/poc-queries/java-security-experimental.qls@main,\
+        queries: security-extended, \
+                 zbazztian/poc-queries/java-security-experimental.qls@main, \
                  zbazztian/poc-queries/java-security-recommendation.qls@main
         #packs: +codeql/java-queries:experimental/Security/CWE/CWE-020/Log4jJndiInjection.ql
 
