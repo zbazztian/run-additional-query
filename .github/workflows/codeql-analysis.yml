@@ -19,7 +19,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [ 'java' ]
+        language: [ 'java', 'javascript' ]
 
     steps:
     - name: Checkout repository
@@ -33,6 +33,8 @@ jobs:
           security-and-quality,
           zbazztian/poc-queries/java-security-recommendation.qls@main,
           zbazztian/poc-queries/java-security-experimental.qls@main
+          zbazztian/poc-queries/javascript-security-recommendation.qls@main,
+          zbazztian/poc-queries/javascript-security-experimental.qls@main,
 
     - run: |
        javac Test.java
