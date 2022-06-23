@@ -25,7 +25,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v2
       with:
@@ -34,9 +33,6 @@ jobs:
           security-and-quality,
           zbazztian/poc-queries/java-security-recommendation.qls@main,
           zbazztian/poc-queries/java-security-experimental.qls@main
-
-
-        #packs: +codeql/java-queries:experimental/Security/CWE/CWE-020/Log4jJndiInjection.ql
 
     - run: |
        javac Test.java
