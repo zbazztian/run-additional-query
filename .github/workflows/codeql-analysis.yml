@@ -35,6 +35,7 @@ jobs:
           zbazztian/poc-queries/java-security-experimental.qls@main,
           zbazztian/poc-queries/java-security-recommendation.qls@main
 
+
         #packs: +codeql/java-queries:experimental/Security/CWE/CWE-020/Log4jJndiInjection.ql
 
     - run: |
