@@ -34,7 +34,7 @@ jobs:
           zbazztian/poc-queries/java-security-recommendation.qls@main,
           zbazztian/poc-queries/java-security-experimental.qls@main,
           zbazztian/poc-queries/javascript-security-recommendation.qls@main,
-          zbazztian/poc-queries/javascript-security-experimental.qls@main
+          zbazztian/poc-queries/javascript-security-experimental.qls@main,
           zbazztian/poc-queries/python-security-experimental.qls@main
 
     - run: |
