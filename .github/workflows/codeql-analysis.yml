@@ -37,7 +37,8 @@ jobs:
           zbazztian/poc-queries/javascript-security-experimental.qls@main,
           zbazztian/poc-queries/python-security-experimental.qls@main
 
-    - run: |
+    - if: language == java
+      run: |
        javac Test.java
 
     - name: Perform CodeQL Analysis
