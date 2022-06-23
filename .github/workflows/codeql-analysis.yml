@@ -31,9 +31,9 @@ jobs:
       with:
         languages: ${{ matrix.language }}
         queries: >
-          security-extended,
-          zbazztian/poc-queries/java-security-experimental.qls@main,
-          zbazztian/poc-queries/java-security-recommendation.qls@main
+          security-and-quality,
+          zbazztian/poc-queries/java-security-recommendation.qls@main,
+          zbazztian/poc-queries/java-security-experimental.qls@main
 
 
         #packs: +codeql/java-queries:experimental/Security/CWE/CWE-020/Log4jJndiInjection.ql
