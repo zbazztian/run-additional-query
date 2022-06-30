@@ -19,7 +19,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [ 'java', 'javascript', 'python' ]
+        language: [ 'java', 'javascript', 'python', 'ruby' ]
 
     steps:
     - name: Checkout repository
@@ -36,6 +36,7 @@ jobs:
           zbazztian/poc-queries/javascript-security-recommendation.qls@main,
           zbazztian/poc-queries/javascript-security-experimental.qls@main,
           zbazztian/poc-queries/python-security-experimental.qls@main
+          zbazztian/poc-queries/ruby-security-experimental.qls@main
 
     - if: matrix.language == 'java'
       run: |
